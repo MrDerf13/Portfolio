@@ -1,0 +1,238 @@
+@use "./pallette";
+
+@mixin smLayout{
+    html {
+        scroll-behavior: smooth;
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+        height: 8vh;
+        @include pallette.bgborder;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        a:visited {color: pallette.$colorText;}
+        a:hover{
+            color: orange;
+        }  
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 20px;
+            color: pallette.$colorText;
+        }        
+    }
+    main {
+        @include pallette.bgborder;
+        background-color: pallette.$colorSecondary;
+        font-size: 24px;
+    }
+    h2 {
+        margin-left: 20px;
+        font-size: 36px;
+    }
+    .home {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-image: url("../images/sunsetbg.png");
+        justify-content: center;
+        align-items: end;
+        padding: 10px;
+        margin: 5px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 5px;
+        align-items: center;
+        img{
+            width:50vw;
+            border-radius: 5%;
+            box-shadow: 8px 8px pallette.$colorText;    
+        }
+        a:visited {color: pallette.$colorText;}
+        a {
+            text-decoration: none;
+            color: pallette.$colorText;
+            font-weight: bold;
+        }
+        a:hover{
+            color: orange;
+        }
+    }
+    .skills {
+        @include pallette.skillsGallery;
+        img {
+            height: 60px;
+            width: 60px;
+        };
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 5px;
+        
+        .listImg {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            border: none;
+        }      
+    }
+        .gallery {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-direction: column;
+            img {
+                border: solid 3px pallette.$colorBorder;
+            }
+            @include pallette.linksFormat;            
+        }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 5px;
+        margin-bottom: 50px;
+        
+        li {
+            list-style: none;
+            padding: 10px;
+            
+            .listImg {
+                width: 30px;
+                height: 30px;
+                margin-right: 15px;
+            }
+        }
+        @include pallette.linksFormat;            
+    }
+}
+@mixin mdLayout{
+    html {
+        scroll-behavior: smooth;
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+        height: 8vh;
+        @include pallette.bgborder;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 30px;
+        a:visited {color: pallette.$colorText;}
+        a:hover{
+            color: orange;
+        }  
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: pallette.$colorText;
+        }        
+    }
+    main {
+        @include pallette.bgborder;
+        background-color: pallette.$colorSecondary;
+        font-size: 30px;
+    }
+    .home {
+        background-image: url("../images/sunsetbg.png");
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 5px;
+        background-size: cover;
+    }
+    h2 {
+        margin-left: 60px;
+        margin-top: 90px;
+    }
+    .about{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        margin: 5px;
+        img{
+            width:30vw;
+            border-radius: 5%;
+            box-shadow: 8px 4px pallette.$colorText;
+            margin: 15px;
+        }
+        a:visited {color: pallette.$colorText;}
+        a {
+            text-decoration: none;
+            color: pallette.$colorText;
+            font-weight: bold;
+        }
+        a:hover{
+            color: orange;
+        }
+    }
+    .skills {
+        @include pallette.skillsGallery;
+        img {
+            height: 70px;
+            width: 70px;
+        }
+    }
+    .projects {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        margin: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        .listImg {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border: none;
+        }      
+    }
+        .gallery {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-direction: row;
+            img {
+                border: solid 5px pallette.$colorBorder;
+            }
+            @include pallette.linksFormat;            
+        }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 5px;
+        margin-bottom: 50px;
+        li {
+            list-style: none;
+            padding: 10px;
+            .listImg {
+                width: 50px;
+                height: 50px;
+                margin-right: 15px;
+            }
+        }
+        @include pallette.linksFormat;            
+    }
+}

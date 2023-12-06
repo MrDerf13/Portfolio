@@ -1,0 +1,313 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  color: #FFEAD2;
+  margin: 0;
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+    background-color: #8294C4;
+    border: 2px solid #DBDFEA;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  header a:visited {
+    color: #FFEAD2;
+  }
+  header a:hover {
+    color: orange;
+  }
+  header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFEAD2;
+  }
+  main {
+    background-color: #8294C4;
+    border: 2px solid #DBDFEA;
+    background-color: #ACB1D6;
+    font-size: 24px;
+  }
+  h2 {
+    margin-left: 20px;
+    font-size: 36px;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../images/sunsetbg.png");
+    justify-content: center;
+    align-items: end;
+    padding: 10px;
+    margin: 5px;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+  }
+  .about img {
+    width: 50vw;
+    border-radius: 5%;
+    box-shadow: 8px 8px #FFEAD2;
+  }
+  .about a:visited {
+    color: #FFEAD2;
+  }
+  .about a {
+    text-decoration: none;
+    color: #FFEAD2;
+    font-weight: bold;
+  }
+  .about a:hover {
+    color: orange;
+  }
+  .skills .gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
+    margin: 50px;
+  }
+  .skills .gallery img {
+    border: none;
+  }
+  .skills img {
+    height: 60px;
+    width: 60px;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+  }
+  .projects .listImg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border: none;
+  }
+  .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .gallery img {
+    border: solid 3px #DBDFEA;
+  }
+  .gallery a:visited {
+    color: #FFEAD2;
+  }
+  .gallery a:hover {
+    color: orange;
+  }
+  .gallery a {
+    text-decoration: none;
+    color: #FFEAD2;
+    display: flex;
+    justify-content: baseline;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 50px;
+  }
+  .contact li {
+    list-style: none;
+    padding: 10px;
+  }
+  .contact li .listImg {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+  .contact a:visited {
+    color: #FFEAD2;
+  }
+  .contact a:hover {
+    color: orange;
+  }
+  .contact a {
+    text-decoration: none;
+    color: #FFEAD2;
+    display: flex;
+    justify-content: baseline;
+  }
+}
+@media screen and (min-width: 577px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+    background-color: #8294C4;
+    border: 2px solid #DBDFEA;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+  }
+  header a:visited {
+    color: #FFEAD2;
+  }
+  header a:hover {
+    color: orange;
+  }
+  header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFEAD2;
+  }
+  main {
+    background-color: #8294C4;
+    border: 2px solid #DBDFEA;
+    background-color: #ACB1D6;
+    font-size: 30px;
+  }
+  .home {
+    background-image: url("../images/sunsetbg.png");
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    background-size: cover;
+  }
+  h2 {
+    margin-left: 60px;
+    margin-top: 90px;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+  }
+  .about img {
+    width: 30vw;
+    border-radius: 5%;
+    box-shadow: 8px 4px #FFEAD2;
+    margin: 15px;
+  }
+  .about a:visited {
+    color: #FFEAD2;
+  }
+  .about a {
+    text-decoration: none;
+    color: #FFEAD2;
+    font-weight: bold;
+  }
+  .about a:hover {
+    color: orange;
+  }
+  .skills .gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
+    margin: 50px;
+  }
+  .skills .gallery img {
+    border: none;
+  }
+  .skills img {
+    height: 70px;
+    width: 70px;
+  }
+  .projects {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .projects .listImg {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border: none;
+  }
+  .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+  }
+  .gallery img {
+    border: solid 5px #DBDFEA;
+  }
+  .gallery a:visited {
+    color: #FFEAD2;
+  }
+  .gallery a:hover {
+    color: orange;
+  }
+  .gallery a {
+    text-decoration: none;
+    color: #FFEAD2;
+    display: flex;
+    justify-content: baseline;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 50px;
+  }
+  .contact li {
+    list-style: none;
+    padding: 10px;
+  }
+  .contact li .listImg {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  .contact a:visited {
+    color: #FFEAD2;
+  }
+  .contact a:hover {
+    color: orange;
+  }
+  .contact a {
+    text-decoration: none;
+    color: #FFEAD2;
+    display: flex;
+    justify-content: baseline;
+  }
+}
