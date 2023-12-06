@@ -1,0 +1,18 @@
+@use "./mixins/pallette";
+@use "./mixins/mediasize";
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    color: pallette.$colorText;
+    margin: 0;
+}
+
+@media screen and (max-width: 576px){
+    @include mediasize.smLayout;
+}
+
+@media screen and (min-width: 577px){
+    @include mediasize.mdLayout;
+}
