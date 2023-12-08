@@ -1,0 +1,38 @@
+$colorMain:#8294C4;
+$colorSecondary:#ACB1D6;
+$colorText:#FFEAD2;
+$colorBorder:#DBDFEA;
+
+@mixin bgborder{
+    background-color: $colorMain;
+    border: 2px solid $colorBorder;
+}
+
+@mixin linksFormat{
+    a:visited {
+        color: $colorText;
+    }
+    a:hover{
+        color: orange;
+    }
+    a {
+        text-decoration: none;
+        color: $colorText;
+        display: flex;
+        justify-content: baseline;
+    }
+}
+
+@mixin skillsGallery{  
+    .gallery {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: start;
+        flex-wrap: wrap;
+        margin: 50px;
+        img {
+            border: none;
+        }
+    }
+}
